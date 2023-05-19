@@ -1,54 +1,30 @@
-package com.engsoft2.realstate.entities;
+package com.engsoft2.realstate.entities.dto;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import jakarta.persistence.*;
+import com.engsoft2.realstate.entities.Property;
 
-@JsonIdentityInfo(generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
-@Entity
-@Table(name = "property")
-public class Property {
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "id")
+public class PropertyDTO {
     private int id;
-    @Column(name = "name")
     private String name;
-    @Column(name = "description")
     private String description;
-    @Column(name = "image_url")
     private String imageUrl;
-    @Column(name = "type")
     private String type;
-    @Column(name = "sale_mode")
     private String saleMode;
-    @Column(name = "address")
     private String address;
-    @Column(name = "size")
     private double size;
-    @Column(name = "contact_info")
     private String contactInfo;
-    @Column(name = "price")
     private double price;
-    @Column(name = "bathroom_count")
     private int bathroomCount;
-    @Column(name = "room_count")
     private int roomCount;
-    @Column(name = "parking_count")
     private int parkingCount;
-    @Column(name = "is_active")
     private boolean isActive;
-    @Column(name = "is_commercial")
     private boolean isCommercial;
-    @ManyToOne()
-    @JoinColumn(name = "user_id")
-    private User user;
+    private int userId;
 
-    public Property() {
+    public PropertyDTO() {
     }
 
-    public Property(int id, String name, String description, String imageUrl, String type, String saleMode, String address,
-                    double size, String contactInfo, double price, int bathroomCount, int roomCount, int parkingCount, boolean isActive, boolean isCommercial, User user) {
+    public PropertyDTO(int id, String name, String description, String imageUrl, String type, String saleMode, String address,
+                       double size, String contactInfo, double price, int bathroomCount, int roomCount, int parkingCount, boolean isActive, boolean isCommercial, int userId) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -64,7 +40,7 @@ public class Property {
         this.parkingCount = parkingCount;
         this.isActive = isActive;
         this.isCommercial = isCommercial;
-        this.user = user;
+        this.userId = userId;
     }
 
     public int getId() {
@@ -187,11 +163,32 @@ public class Property {
         isCommercial = commercial;
     }
 
-    public User getUser() {
-        return user;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public Property toProperty() {
+        Property property = new Property();
+        property.setId(this.id);
+        property.setName(this.name);
+        property.setDescription(this.description);
+        property.setImageUrl(this.imageUrl);
+        property.setType(this.type);
+        property.setSaleMode(this.saleMode);
+        property.setAddress(this.address);
+        property.setSize(this.size);
+        property.setContactInfo(this.contactInfo);
+        property.setPrice(this.price);
+        property.setBathroomCount(this.bathroomCount);
+        property.setRoomCount(this.roomCount);
+        property.setParkingCount(this.parkingCount);
+        property.setActive(this.isActive);
+        property.setCommercial(this.isCommercial);
+
+        return property;
     }
 }

@@ -1,10 +1,16 @@
 package com.engsoft2.realstate.entities;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
+@JsonIdentityInfo(generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
 @Entity
-@Table(name = "user")
+@Table(name = "`user`")
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -17,14 +23,18 @@ public class User {
     @JsonIgnore
     @Column(name = "password")
     private String password;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
+    private List<Property> properties = new ArrayList<>();
 
     public User() {
     }
-    public User(int id, String name, String email, String password) {
+
+    public User(int id, String name, String email, String password, List<Property> properties) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
+        this.properties = properties;
     }
 
     public int getId() {
@@ -57,5 +67,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Property> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(List<Property> properties) {
+        this.properties = properties;
     }
 }
