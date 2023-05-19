@@ -10,7 +10,7 @@ Assim, durante a rolagem, caso tenha interesse em algum imóvel, poderá selecio
 ## Grupo:
 
 
-| Nome    | Matrícula  | Designações  |
+| Nome    | Matrícula  |
 |---------|------------|------------|
 | Lucas Augusto Araújo Aguiar | 2018054494 |
 | Luis Henrique Soares Monteiro | 2018054583 |
