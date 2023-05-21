@@ -3,7 +3,6 @@ package com.engsoft2.realstate.services;
 import com.engsoft2.realstate.entities.Property;
 import com.engsoft2.realstate.entities.User;
 import com.engsoft2.realstate.entities.dto.PropertyDTO;
-import com.engsoft2.realstate.entities.dto.UserDTO;
 import com.engsoft2.realstate.exceptions.ObjectNotFoundException;
 import com.engsoft2.realstate.repositories.PropertyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,13 +13,14 @@ import java.util.List;
 @Service
 public class PropertyService {
     @Autowired
-    private PropertyRepository propertyRepository;
+    final private PropertyRepository propertyRepository;
 
     @Autowired
-    private UserService userService;
+    final private UserService userService;
 
-    public PropertyService(PropertyRepository propertyRepository) {
+    public PropertyService(PropertyRepository propertyRepository, UserService userService) {
         this.propertyRepository = propertyRepository;
+        this.userService = userService;
     }
 
     public Property create(PropertyDTO propertyDTO) {
