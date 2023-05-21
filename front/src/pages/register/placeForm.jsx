@@ -2,9 +2,6 @@ import { AppBar, Button, CssBaseline, FormControl, Input, InputLabel, Link, Sele
 MenuItem, 
 Container} from "@material-ui/core";
 import React, {useState} from "react";
-import HomeIcon from '@mui/icons-material/Home';
-import { Link as routerLink } from 'react-router-dom';
-import useStyles from '../../components/properties/styles';
 import NavigationBar from "../utils/toolbar";
 import Footer from "../utils/footer";
 
@@ -15,7 +12,6 @@ const PlaceForm = () => {
     const [nrVagas, setNrVagas] = useState('');
     const [isComercial, setIsComercial] = useState('1');
     const [contato, setContato] = useState('');
-    const classes = useStyles();
 
     return(
         <div>
@@ -30,7 +26,6 @@ const PlaceForm = () => {
                     Preencha os campos para que seu imóvel apareça em nossa lista de imóveis
                 </Typography>
             </Container>
-            {/* <div style={{display:"flex", marginTop:"30px", justifyContent:"center"}}> */}
             <Container maxWidth='sm' style={{ marginTop:'100px', marginBottom:'50px', alignItems:"center" }}>
                 <form>
                     <InputLabel id="tipoImovel">Tipo do imóvel</InputLabel>
@@ -65,11 +60,10 @@ const PlaceForm = () => {
                     <Input accept="image/*" id="image" multiple type="file"/>
                     <Button variant="contained" component="span">Upload</Button>
 
-                    <Button style={{marginTop:"10rem", width:"auto"}} variant="contained" onClick={() => {}}>Cadastrar</Button>
+                    <Button style={{marginTop:"10rem", width:"auto"}} variant="contained" onClick="history.go(0);">Cadastrar</Button>
                 </form>
             </Container>
             
-            {/* </div> */}
             <Footer/>
         </div>
         )}
