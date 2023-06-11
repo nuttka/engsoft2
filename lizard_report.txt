@@ -1,154 +1,6 @@
 ================================================
   NLOC    CCN   token  PARAM  length  location
 ------------------------------------------------
-       3      1     21      0       3 PropertyController::findAll@20-22@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-       3      1     26      1       3 PropertyController::findById@24-26@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-       3      1     26      1       3 PropertyController::create@29-31@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-       4      1     24      1       4 PropertyController::delete@34-37@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-       3      1     26      1       3 PropertyController::update@40-42@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-       3      1     21      0       3 UserController::findAll@20-22@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-       3      1     26      1       3 UserController::findById@24-26@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-       3      1     26      1       3 UserController::create@29-31@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-       4      1     24      1       4 UserController::delete@34-37@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-       3      1     26      1       3 UserController::update@40-42@./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-       2      1      5      0       2 PropertyDTO::PropertyDTO@23-24@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-      19      1    148     16      19 PropertyDTO::PropertyDTO@26-44@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getId@46-48@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setId@50-52@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getName@54-56@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setName@58-60@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getDescription@62-64@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setDescription@66-68@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getImageUrl@70-72@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setImageUrl@74-76@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getType@78-80@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setType@82-84@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getSaleMode@86-88@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setSaleMode@90-92@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getAddress@94-96@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setAddress@98-100@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getSize@102-104@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setSize@106-108@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getContactInfo@110-112@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setContactInfo@114-116@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getPrice@118-120@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setPrice@122-124@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getBathroomCount@126-128@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setBathroomCount@130-132@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getRoomCount@134-136@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setRoomCount@138-140@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getParkingCount@142-144@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setParkingCount@146-148@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::isActive@150-152@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     11      1       3 PropertyDTO::setActive@154-156@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::isCommercial@158-160@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     11      1       3 PropertyDTO::setCommercial@162-164@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1      8      0       3 PropertyDTO::getUserId@166-168@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       3      1     13      1       3 PropertyDTO::setUserId@170-172@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-      19      1    151      0      20 PropertyDTO::toProperty@174-193@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-       2      1      5      0       2 UserDTO::UserDTO@11-12@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       6      1     40      4       6 UserDTO::UserDTO@14-19@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1      8      0       3 UserDTO::getId@21-23@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1     13      1       3 UserDTO::setId@25-27@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1      8      0       3 UserDTO::getName@29-31@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1     13      1       3 UserDTO::setName@33-35@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1      8      0       3 UserDTO::getEmail@37-39@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1     13      1       3 UserDTO::setEmail@41-43@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1      8      0       3 UserDTO::getPassword@45-47@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       3      1     13      1       3 UserDTO::setPassword@49-51@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       8      1     52      0       8 UserDTO::toUser@53-60@./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-       2      1      5      0       2 Property::Property@47-48@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-      19      1    148     16      19 Property::Property@50-68@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getId@70-72@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setId@74-76@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getName@78-80@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setName@82-84@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getDescription@86-88@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setDescription@90-92@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getImageUrl@94-96@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setImageUrl@98-100@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getType@102-104@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setType@106-108@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getSaleMode@110-112@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setSaleMode@114-116@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getAddress@118-120@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setAddress@122-124@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getSize@126-128@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setSize@130-132@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getContactInfo@134-136@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setContactInfo@138-140@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getPrice@142-144@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setPrice@146-148@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getBathroomCount@150-152@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setBathroomCount@154-156@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getRoomCount@158-160@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setRoomCount@162-164@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getParkingCount@166-168@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setParkingCount@170-172@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::isActive@174-176@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     11      1       3 Property::setActive@178-180@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::isCommercial@182-184@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     11      1       3 Property::setCommercial@186-188@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1      8      0       3 Property::getUser@190-192@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       3      1     13      1       3 Property::setUser@194-196@./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-       2      1      5      0       2 User::User@29-30@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       7      1     52      5       7 User::User@32-38@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1      8      0       3 User::getId@40-42@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     13      1       3 User::setId@44-46@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1      8      0       3 User::getName@48-50@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     13      1       3 User::setName@52-54@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1      8      0       3 User::getEmail@56-58@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     13      1       3 User::setEmail@60-62@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1      8      0       3 User::getPassword@64-66@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     13      1       3 User::setPassword@68-70@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1      8      0       3 User::getProperties@72-74@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     16      1       3 User::setProperties@76-78@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     12      1       3 ObjectNotFoundException::ObjectNotFoundException@7-9@./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
-       3      1     17      2       3 ObjectNotFoundException::ObjectNotFoundException@11-13@./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
-      14      1    149      0      16 DBService::instantiateTestDatabase@15-30@./realstate-api/src/main/java/com/engsoft2/realstate/services/DBService.java
-       3      1     13      1       3 PropertyService::PropertyService@22-24@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       6      1     45      1       7 PropertyService::create@26-32@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       3      1     29      1       3 PropertyService::findById@34-36@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       3      1     12      0       3 PropertyService::findAll@38-40@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       4      1     24      1       4 PropertyService::delete@42-45@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       5      2     37      1       5 PropertyService::update@47-51@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-       3      1     13      1       3 UserService::UserService@17-19@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       4      1     24      1       4 UserService::create@21-24@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       3      1     29      1       3 UserService::findById@26-28@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       3      1     12      0       3 UserService::findAll@30-32@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       4      1     24      1       4 UserService::delete@34-37@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       5      2     37      1       5 UserService::update@39-43@./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-       3      1     20      1       3 RealstateApplication::main@12-14@./realstate-api/src/main/java/com/engsoft2/realstate/RealstateApplication.java
-       3      1     11      0       3 RealstateApplication::init@20-22@./realstate-api/src/main/java/com/engsoft2/realstate/RealstateApplication.java
-14 file analyzed.
-==============================================================
-NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
---------------------------------------------------------------
-     36       3.2     1.0       24.6         5     ./realstate-api/src/main/java/com/engsoft2/realstate/controllers/PropertyController.java
-     36       3.2     1.0       24.6         5     ./realstate-api/src/main/java/com/engsoft2/realstate/controllers/UserController.java
-    156       3.9     1.0       18.2        35     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/PropertyDTO.java
-     48       3.6     1.0       16.5        11     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
-    161       3.4     1.0       14.3        34     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
-     64       3.2     1.0       13.8        12     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-     10       3.0     1.0       14.5         2     ./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
-      5       0.0     0.0        0.0         0     ./realstate-api/src/main/java/com/engsoft2/realstate/repositories/PropertyRepository.java
-      5       0.0     0.0        0.0         0     ./realstate-api/src/main/java/com/engsoft2/realstate/repositories/UserRepository.java
-     26      14.0     1.0      149.0         1     ./realstate-api/src/main/java/com/engsoft2/realstate/services/DBService.java
-     41       4.0     1.2       26.7         6     ./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
-     35       3.7     1.2       23.2         6     ./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
-     18       3.0     1.0       15.5         2     ./realstate-api/src/main/java/com/engsoft2/realstate/RealstateApplication.java
-      6       0.0     0.0        0.0         0     ./realstate-api/src/test/java/com/engsoft2/realstate/RealstateApplicationTests.java
-
-===============================================================================================================
-No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
-==========================================================================================
-Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
-------------------------------------------------------------------------------------------
-       647       3.7     1.0       18.7      119            0      0.00    0.00
-(base) ➜  tp git:(main) ✗ lizard
-================================================
-  NLOC    CCN   token  PARAM  length  location
-------------------------------------------------
        4      1      9      0       4 (anonymous)@14-17@./front/src/components/properties/filter.jsx
        4      1      9      0       4 (anonymous)@19-22@./front/src/components/properties/filter.jsx
       16      1    136      0      24 Filter@5-28@./front/src/components/properties/filter.jsx
@@ -172,10 +24,9 @@ Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc 
       15      1     51      0      16 WelcomeText@5-20@./front/src/pages/home/welcome.jsx
       10      1     23      0      13 Property@6-18@./front/src/pages/property/index.jsx
        7      1     11      0       8 Register@4-11@./front/src/pages/register/index.jsx
-       4      1      9      0       4 (anonymous)@32-35@./front/src/pages/register/placeForm.jsx
-       4      1      9      0       4 (anonymous)@36-39@./front/src/pages/register/placeForm.jsx
-       1      1      2      0       1 (anonymous)@41-41@./front/src/pages/register/placeForm.jsx
-      30      1    213      0      38 PlaceForm@11-48@./front/src/pages/register/placeForm.jsx
+       4      1      9      0       4 (anonymous)@27-30@./front/src/pages/register/placeForm.jsx
+       4      1      9      0       4 (anonymous)@31-34@./front/src/pages/register/placeForm.jsx
+      27      1    198      0      35 PlaceForm@8-42@./front/src/pages/register/placeForm.jsx
       17      1     33      0      18 Footer@6-23@./front/src/pages/utils/footer.jsx
       33      1     96      0      40 (anonymous)@3-42@./front/src/pages/utils/styles.js
       21      1     38      0      22 NavigationBar@8-29@./front/src/pages/utils/toolbar.jsx
@@ -282,10 +133,9 @@ Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc 
        3      1     13      1       3 User::setPassword@68-70@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
        3      1      8      0       3 User::getProperties@72-74@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
        3      1     16      1       3 User::setProperties@76-78@./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-       3      1     12      1       3 ObjectNotFoundException::ObjectNotFoundException@7-9@./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
-       3      1     17      2       3 ObjectNotFoundException::ObjectNotFoundException@11-13@./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
+       3      1     12      1       3 ObjectNotFoundException::ObjectNotFoundException@9-11@./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
       14      1    149      0      16 DBService::instantiateTestDatabase@15-30@./realstate-api/src/main/java/com/engsoft2/realstate/services/DBService.java
-       3      1     13      1       3 PropertyService::PropertyService@22-24@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
+       4      1     22      2       4 PropertyService::PropertyService@21-24@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
        6      1     45      1       7 PropertyService::create@26-32@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
        3      1     29      1       3 PropertyService::findById@34-36@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
        3      1     12      0       3 PropertyService::findAll@38-40@./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
@@ -311,7 +161,7 @@ NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
      18      15.0     1.0       51.0         1     ./front/src/pages/home/welcome.jsx
      15      10.0     1.0       23.0         1     ./front/src/pages/property/index.jsx
      10       7.0     1.0       11.0         1     ./front/src/pages/register/index.jsx
-     46       9.8     1.0       58.2         4     ./front/src/pages/register/placeForm.jsx
+     40      11.7     1.0       72.0         3     ./front/src/pages/register/placeForm.jsx
      21      17.0     1.0       33.0         1     ./front/src/pages/utils/footer.jsx
      35      33.0     1.0       96.0         1     ./front/src/pages/utils/styles.js
      27      21.0     1.0       38.0         1     ./front/src/pages/utils/toolbar.jsx
@@ -323,11 +173,11 @@ NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
      48       3.6     1.0       16.5        11     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/dto/UserDTO.java
     161       3.4     1.0       14.3        34     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/Property.java
      64       3.2     1.0       13.8        12     ./realstate-api/src/main/java/com/engsoft2/realstate/entities/User.java
-     10       3.0     1.0       14.5         2     ./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
+      9       3.0     1.0       12.0         1     ./realstate-api/src/main/java/com/engsoft2/realstate/exceptions/ObjectNotFoundException.java
       5       0.0     0.0        0.0         0     ./realstate-api/src/main/java/com/engsoft2/realstate/repositories/PropertyRepository.java
       5       0.0     0.0        0.0         0     ./realstate-api/src/main/java/com/engsoft2/realstate/repositories/UserRepository.java
      26      14.0     1.0      149.0         1     ./realstate-api/src/main/java/com/engsoft2/realstate/services/DBService.java
-     41       4.0     1.2       26.7         6     ./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
+     41       4.2     1.2       28.2         6     ./realstate-api/src/main/java/com/engsoft2/realstate/services/PropertyService.java
      35       3.7     1.2       23.2         6     ./realstate-api/src/main/java/com/engsoft2/realstate/services/UserService.java
      18       3.0     1.0       15.5         2     ./realstate-api/src/main/java/com/engsoft2/realstate/RealstateApplication.java
       6       0.0     0.0        0.0         0     ./realstate-api/src/test/java/com/engsoft2/realstate/RealstateApplicationTests.java
@@ -337,4 +187,4 @@ No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 10
 ==========================================================================================
 Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
 ------------------------------------------------------------------------------------------
-      1085       5.4     1.0       23.7      150            0      0.00    0.00
+      1078       5.5     1.0       23.9      148            0      0.00    0.00

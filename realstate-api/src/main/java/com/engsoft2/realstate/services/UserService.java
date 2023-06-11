@@ -20,7 +20,8 @@ public class UserService {
 
     public User create(UserDTO userDTO) {
         User newUser = userDTO.toUser();
-        return userRepository.save(newUser);
+        newUser = userRepository.save(newUser);
+        return newUser;
     }
 
     public User findById(int id) {
