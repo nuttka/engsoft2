@@ -15,6 +15,9 @@ jobs:
         with:
           java-version: '18'
           distribution: 'temurin'
+      - name: Run test
+        working-directory: ./realstate-api
+        run: mvn test
       - name: Build with Maven
         working-directory: ./realstate-api
         run: mvn clean install
