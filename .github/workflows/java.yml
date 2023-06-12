@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 18
+        working-directory: ./realstate-api
         uses: actions/setup-java@v3
         with:
           java-version: '18'
           distribution: 'temurin'
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots package
+        working-directory: ./realstate-api
+        run: mvn clean install
