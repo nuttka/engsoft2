@@ -38,7 +38,7 @@ public class UserServiceTest {
         Mockito.when(this.userRepository.save(Mockito.any())).thenReturn(mockUser());
         User userReturn = this.userService.create(userDTO);
 
-        Assert.assertEquals(userDTO.getEmail(), "userReturn.getEmail()");
+        Assert.assertEquals(userDTO.getEmail(), userReturn.getEmail());
     }
     @Test
     public void testCreateSenha() {
