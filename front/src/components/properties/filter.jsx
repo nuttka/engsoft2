@@ -7,6 +7,26 @@ const Filter = () => {
     const [isComercial, setIsComercial] = useState('');
     const classes = useStyles;
 
+    const [imoveis, setImoveis] = useState([])
+
+
+    const getImoveis = async () => {
+        await fetch(`http://localhost:8080/property`, {
+            method: 'GET',
+        }).then((response) => {
+            if (response.status === 200) {
+                response.json().then(json => {
+
+                    setImoveis(json);
+                    console.log(json);
+                })
+
+            } else {
+                return;
+            }
+        });
+    };
+
     return (
         <Container style={{display:'flex', alignItems:'center', marginBottom:'50px'}}>
             <CssBaseline/>
@@ -29,7 +49,16 @@ const Filter = () => {
                     <MenuItem value="0">Não</MenuItem>
                 </Select>
 
-                <Button value="Filtrar" style={{ marginLeft: '10px', marginRight: '10px' }}>Filtrar</Button>
+                <Button value="Filtrar" style={{ marginLeft: '10px', marginRight: '10px' }} onClick={() => getImoveis()} >Filtrar</Button>
+                {/*<ol>{*/}
+                {/*    imoveis.map((imovel) => (*/}
+                {/*        <div>*/}
+                {/*        <img src={imovel.imageUrl} alt=""/>*/}
+                {/*        <li>{imovel.id}</li>*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</ol>*/}
+
             </div>
         </Container>
 

@@ -13,6 +13,17 @@ const PlaceForm = () => {
     const [isComercial, setIsComercial] = useState('1');
     const [contato, setContato] = useState('');
 
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        const data = { tipoImovel, nrQuartos, localizacao, nrVagas, isComercial, contato };
+        const requestOptions = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        };
+        fetch("http://localhost:8080/user", requestOptions)      .then(response => response.json())      .then(res => console.log(res));  };
+
     return(
         <div>
             <CssBaseline/>
@@ -60,7 +71,7 @@ const PlaceForm = () => {
                     <Input accept="image/*" id="image" multiple type="file"/>
                     <Button variant="contained" component="span">Upload</Button>
 
-                    <Button style={{marginTop:"10rem", width:"auto"}} variant="contained" onClick="history.go(0);">Cadastrar</Button>
+                    <Button style={{marginTop:"10rem", width:"auto"}} variant="contained" onClick={handleSubmit}>Cadastrar</Button>
                 </form>
             </Container>
             
