@@ -6,6 +6,6 @@ import org.springframework.test.context.ContextConfiguration;
 
 @SpringBootTest
 @EnableAutoConfiguration
-@ContextConfiguration(classes = RealstateApplicationTest.class)
+@ContextConfiguration(classes = RealstateApplication.class)
 class RealstateApplicationTest {
 }

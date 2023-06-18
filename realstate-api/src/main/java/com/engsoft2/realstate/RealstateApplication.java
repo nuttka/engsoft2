@@ -13,12 +13,12 @@ public class RealstateApplication {
 		SpringApplication.run(RealstateApplication.class, args);
 	}
 
-	@Autowired
-	private DBService dbService;
-
-	@PostConstruct
-	private void init() {
-		dbService.instantiateTestDatabase();
-	}
+//	@Autowired
+//	private DBService dbService;
+//
+//	@PostConstruct
+//	private void init() {
+//		dbService.instantiateTestDatabase();
+//	}
 
 }
