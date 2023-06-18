@@ -1,4 +1,4 @@
-name: Java CI
+name: Java Tests
 
 on: [push]
 
@@ -15,9 +15,6 @@ jobs:
         with:
           java-version: '18'
           distribution: 'temurin'
-      - name: Test
-        working-directory: ./realstate-api
-        run: mvn test
-      - name: Build
+      - name: Build with tests
         working-directory: ./realstate-api
         run: mvn clean install
